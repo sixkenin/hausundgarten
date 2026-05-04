@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate" />
+  <title>Gartenservice Cosmin — Professionelle Gartenpflege</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav id="main-nav">
+    <div class="nav-logo notranslate" translate="no">
+      <span translate="no">Gartenservice</span>
+      <em translate="no">Cosmin</em>
+    </div>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-links">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="nav-links" id="nav-links">
+      <a href="#services">Leistungen</a>
+      <a href="#galerie">Projekte</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#kontakt" class="nav-cta">Termin buchen</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div id="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <canvas id="leaf-canvas"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span>Gartenpflege &amp; Objektbetreuung</span>
+      </div>
+
+      <h1 class="hero-title notranslate" translate="no">
+        <span class="hero-title-line" id="tw-line1" translate="no">Gartenservice</span>
+        <span class="hero-title-line hero-title-line-italic" id="tw-line2" translate="no">Cosmin</span>
+      </h1>
+
+      <p class="hero-tagline">— Ihr Garten in besten Händen —</p>
+
+      <div class="hero-actions">
+        <a href="#kontakt" class="btn-filled">Termin buchen</a>
+        <a href="#services" class="btn-ghost">Unsere Leistungen</a>
+      </div>
+    </div>
+
+    <div class="scroll-cue">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <div class="marquee-bar" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Gartenanlage</span><span class="dot">·</span>
+      <span>Rasenpflege</span><span class="dot">·</span>
+      <span>Heckenschnitt</span><span class="dot">·</span>
+      <span>Bepflanzung</span><span class="dot">·</span>
+      <span>Baumpflege</span><span class="dot">·</span>
+      <span>Gartenpflege</span><span class="dot">·</span>
+      <span>Hausbetreuung</span><span class="dot">·</span>
+      <span>Saisonale Pflege</span><span class="dot">·</span>
+
+      <span>Gartenanlage</span><span class="dot">·</span>
+      <span>Rasenpflege</span><span class="dot">·</span>
+      <span>Heckenschnitt</span><span class="dot">·</span>
+      <span>Bepflanzung</span><span class="dot">·</span>
+      <span>Baumpflege</span><span class="dot">·</span>
+      <span>Gartenpflege</span><span class="dot">·</span>
+      <span>Hausbetreuung</span><span class="dot">·</span>
+      <span>Saisonale Pflege</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <section class="philosophy">
+    <div class="philosophy-text reveal">
+      <p class="label">Unsere Philosophie</p>
+      <h2 class="display">Jeder Garten ist ein<br/><em>lebendiges Kunstwerk.</em></h2>
+      <p class="sub">Wir betreuen Außenbereiche mit der Sorgfalt und Präzision, die sie verdienen. Von der ersten Planung bis zur laufenden Pflege – unser Team bringt Erfahrung, Leidenschaft und handwerkliche Qualität in jedes Projekt.</p>
+      <a href="#kontakt" class="btn-dark">Kostenlosen Besuch vereinbaren</a>
+    </div>
+
+    <div class="philosophy-visual">
+      <div class="philosophy-img"></div>
+
+      <div class="philosophy-cards">
+        <div class="p-card reveal">
+          <div class="p-card-inner">
+            <span class="p-card-icon">🌿</span>
+            <h4>Erfahrung</h4>
+            <p>Mehrjährige Praxis in Gartenpflege und Gestaltung.</p>
+          </div>
+        </div>
+
+        <div class="p-card reveal reveal-delay-1">
+          <div class="p-card-inner">
+            <span class="p-card-icon">🛠️</span>
+            <h4>Qualität</h4>
+            <p>Saubere Arbeit, langlebige Ergebnisse und Präzision.</p>
+          </div>
+        </div>
+
+        <div class="p-card reveal reveal-delay-2">
+          <div class="p-card-inner">
+            <span class="p-card-icon">🤝</span>
+            <h4>Zuverlässigkeit</h4>
+            <p>Termintreue, Kommunikation und Vertrauen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-section" id="services">
+    <div class="services-header">
+      <div class="services-header-left reveal">
+        <p class="label">Was wir tun</p>
+        <h2 class="display">Professionelle Pflege<br/><em>für Ihren Außenbereich.</em></h2>
+      </div>
+      <div class="services-tabs">
+        <button class="stab active" data-panel="garden">Gartenanlage</button>
+        <button class="stab" data-panel="pflege">Gartenpflege</button>
+      </div>
+    </div>
+
+    <div class="service-panel active" id="panel-garden">
+      <div class="svc-hero reveal">
+        <div class="svc-visual">
+          <div class="svc-img" style="background-image:url('img/card-3.JPG'); background-color:#2c4a2e;"></div>
+          <div class="svc-badge">01</div>
+        </div>
+        <div class="svc-content">
+          <p class="label">Gartenanlage</p>
+          <h3>Gärten, die wir zum<br/><em>Leben erwecken.</em></h3>
+          <p>Von Pflanzkonzepten und Rasenpflege bis zur vollständigen Gartengestaltung – wir verwandeln Außenbereiche in Orte, an denen Sie sich wohlfühlen. Jeder Garten wird als lebendiger, sich ständig entwickelnder Raum betrachtet.</p>
+          <a href="#kontakt" class="btn-outline">Termin buchen</a>
+        </div>
+      </div>
+
+      <div class="svc-sub-grid">
+        <div class="svc-sub-card reveal">
+          <svg class="svc-sub-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 4C16 4 8 10 8 18C8 22.4 11.6 26 16 26C20.4 26 24 22.4 24 18C24 10 16 4 16 4Z" stroke="#2c4a2e" stroke-width="1.5" fill="none"/>
+            <line x1="16" y1="26" x2="16" y2="30" stroke="#2c4a2e" stroke-width="1.5"/>
+          </svg>
+          <h4>Gartengestaltung</h4>
+          <p>Individuelle Entwürfe und Bepflanzungskonzepte, abgestimmt auf Ihren Lebensstil und Außenbereich.</p>
+        </div>
+
+        <div class="svc-sub-card reveal reveal-delay-1">
+          <svg class="svc-sub-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="20" width="24" height="4" rx="1" stroke="#2c4a2e" stroke-width="1.5"/>
+            <path d="M8 20C8 14 16 8 16 8C16 8 24 14 24 20" stroke="#2c4a2e" stroke-width="1.5" fill="none"/>
+          </svg>
+          <h4>Rasenpflege</h4>
+          <p>Mähen, Vertikutieren, Düngen und saisonale Rasenprogramme für ein perfektes Rasenbild.</p>
+        </div>
+
+        <div class="svc-sub-card reveal reveal-delay-2">
+          <svg class="svc-sub-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 28L16 6L26 28" stroke="#2c4a2e" stroke-width="1.5" fill="none"/>
+            <line x1="9" y1="20" x2="23" y2="20" stroke="#2c4a2e" stroke-width="1.5"/>
+          </svg>
+          <h4>Baum- &amp; Heckenpflege</h4>
+          <p>Professionelles Schneiden, Formen und Gesundheitsbewertung für alle Gehölze.</p>
+        </div>
+
+        <div class="svc-sub-card reveal reveal-delay-3">
+          <svg class="svc-sub-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="10" stroke="#2c4a2e" stroke-width="1.5"/>
+            <path d="M16 6C16 6 12 11 12 16C12 21 16 26 16 26" stroke="#2c4a2e" stroke-width="1"/>
+            <path d="M6 16H26" stroke="#2c4a2e" stroke-width="1"/>
+          </svg>
+          <h4>Saisonale Bepflanzung</h4>
+          <p>Kuratierte Pflanzprogramme für Farbe und Leben im Garten das ganze Jahr hindurch.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-panel" id="panel-pflege">
+      <div class="svc-hero reveal">
+        <div class="svc-visual">
+          <div class="svc-img" style="background-image:url('img/gazon.JPG'); background-color:#3a5e3c;"></div>
+          <div class="svc-badge">02</div>
+        </div>
+        <div class="svc-content">
+          <p class="label">Gartenpflege</p>
+          <h3>Gepflegte Gärten<br/><em>in perfektem Zustand.</em></h3>
+          <p>Wir sorgen dafür, dass Ihr Garten das ganze Jahr über sauber, gesund und gepflegt bleibt – von regelmäßiger Pflege über Schnittarbeiten bis hin zu allgemeinen Gartenarbeiten, alles mit Sorgfalt und Präzision ausgeführt.</p>
+          <a href="#kontakt" class="btn-outline">Termin buchen</a>
+        </div>
+      </div>
+
+      <div class="svc-sub-grid">
+        <div class="svc-sub-card reveal"><h4>Regelmäßige Pflege</h4><p>Wöchentliche oder zweiwöchentliche Besuche – Mähen, Zurückschneiden, Aufräumen.</p></div>
+        <div class="svc-sub-card reveal reveal-delay-1"><h4>Laubbeseitigung</h4><p>Gründliche Herbst- und Frühjahrsreinigung für einen gepflegten Gesamteindruck.</p></div>
+        <div class="svc-sub-card reveal reveal-delay-2"><h4>Objektbetreuung</h4><p>Zuverlässige Betreuung von Privatobjekten und Gewerbeanlagen.</p></div>
+        <div class="svc-sub-card reveal reveal-delay-3"><h4>Winterdienst</h4><p>Schneeräumung, Streudienst und Sicherung Ihrer Wege und Zufahrten.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-section" id="galerie">
+    <div class="gallery-section-head reveal">
+      <div>
+        <p class="label">Unsere Arbeiten</p>
+        <h2 class="display">Ausgewählte<br/><em>Gartenprojekte.</em></h2>
+      </div>
+      <span class="gallery-hint">Zum Vergrößern klicken</span>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gi reveal" data-caption="Privatgarten – Gestaltung &amp; Bepflanzung">
+        <img src="img/privategarden.jpg" class="gi-fill" alt="Gartenarrangement" loading="lazy" onerror="this.style.display='none'; this.parentNode.querySelector('.gi-fill-fb') && (this.parentNode.querySelector('.gi-fill-fb').style.display='block')"/>
+        <div class="gi-fill p-lawn gi-fill-fb" style="display:none;"></div>
+        <div class="gi-overlay"><span class="gi-caption">Privatgarten — Gestaltung &amp; Bepflanzung</span></div>
+      </div>
+
+      <div class="gi reveal reveal-delay-1" data-caption="Heckenschnitt – Saisonale Pflege">
+        <img src="img/galerie-1.JPG" class="gi-fill" alt="Heckenschnitt" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="gi-fill p-hedge"></div>
+        <div class="gi-overlay"><span class="gi-caption">Heckenschnitt</span></div>
+      </div>
+
+      <div class="gi reveal reveal-delay-2" data-caption="Lebensgarten – Konzept &amp; Pflanzung">
+        <img src="img/pavare.jpg" class="gi-fill" alt="Lebensgarten" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="gi-fill p-garden"></div>
+        <div class="gi-overlay"><span class="gi-caption">Konzept &amp; Pflanzschema</span></div>
+      </div>
+
+      <div class="gi reveal" data-caption="Rasenanlage">
+        <img src="img/gazonintretinut.jpg" class="gi-fill" alt="Rasen" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="gi-fill p-lawn"></div>
+        <div class="gi-overlay"><span class="gi-caption">Rasenanlage</span></div>
+      </div>
+
+      <div class="gi reveal reveal-delay-1" data-caption="Terrasse – Hochbeete &amp; Pflasterung">
+        <img src="img/galerie-3.JPG" class="gi-fill" alt="Terrasse" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="gi-fill p-terrace"></div>
+        <div class="gi-overlay"><span class="gi-caption">Terrasse — Hochbeete &amp; Pflasterung</span></div>
+      </div>
+
+      <div class="gi reveal reveal-delay-2" data-caption="Gartengestaltung">
+        <img src="img/gazongradina.JPG" class="gi-fill" alt="Gartengestaltung" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="gi-fill p-design"></div>
+        <div class="gi-overlay"><span class="gi-caption">Gartengestaltung</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="ueber-uns">
+    <div class="about-visual">
+      <div class="about-visual-img"></div>
+      <div class="about-visual-deco">
+        <p class="about-visual-quote">"Ein Garten spiegelt die Hingabe wider, die in ihn investiert wurde."</p>
+      </div>
+    </div>
+
+    <div class="about-content reveal">
+      <p class="label">Über uns</p>
+      <h2 class="display">Handwerk, Leidenschaft<br/><em>und Erfahrung.</em></h2>
+      <p class="sub">Gartenservice Cosmin wurde auf einer einfachen Überzeugung gegründet: Außenbereiche verdienen dieselbe Sorgfalt und Intention wie die Häuser, die sie umgeben. Unser engagiertes Team bringt jahrelange praktische Erfahrung mit – wir arbeiten für Privat- und Geschäftskunden und liefern Ergebnisse, die dauerhaft überzeugen.</p>
+
+      <div class="about-values">
+        <div class="about-value reveal">
+          <div class="about-value-top">
+            <span class="about-value-mark">01</span>
+            <h4>Sorgfältige Ausführung</h4>
+          </div>
+          <p>Jede Fläche wird sauber, strukturiert und mit Blick auf langlebige Ergebnisse gepflegt.</p>
+        </div>
+
+        <div class="about-value reveal reveal-delay-1">
+          <div class="about-value-top">
+            <span class="about-value-mark">02</span>
+            <h4>Persönliche Betreuung</h4>
+          </div>
+          <p>Wir nehmen uns Zeit für Beratung, Planung und eine Lösung, die zu Ihrem Objekt passt.</p>
+        </div>
+
+        <div class="about-value reveal reveal-delay-2">
+          <div class="about-value-top">
+            <span class="about-value-mark">03</span>
+            <h4>Verlässlicher Service</h4>
+          </div>
+          <p>Klare Kommunikation, pünktliche Umsetzung und ein Auftritt, auf den Sie sich verlassen können.</p>
+        </div>
+      </div>
+
+      <a href="#kontakt" class="btn-dark">Kontakt aufnehmen</a>
+    </div>
+  </section>
+
+  <section class="process">
+    <p class="label">Unser Ablauf</p>
+    <h2 class="display">So arbeiten<br/><em>wir zusammen.</em></h2>
+    <div class="process-grid">
+      <div class="process-step reveal">
+        <div class="process-num">01</div>
+        <div class="process-title">Erstgespräch</div>
+        <p class="process-desc">Wir besprechen Ihre Wünsche und Vorstellungen in einem persönlichen Gespräch oder telefonisch.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-1">
+        <div class="process-num">02</div>
+        <div class="process-title">Ortsbegehung</div>
+        <p class="process-desc">Unser Team besucht Ihr Objekt, analysiert den Ist-Zustand und entwickelt ein maßgeschneidertes Konzept.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-2">
+        <div class="process-num">03</div>
+        <div class="process-title">Angebot</div>
+        <p class="process-desc">Sie erhalten ein klares, transparentes Angebot ohne versteckte Kosten – mit detaillierter Leistungsbeschreibung.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-3">
+        <div class="process-num">04</div>
+        <div class="process-title">Umsetzung</div>
+        <p class="process-desc">Unser erfahrenes Team führt alle Arbeiten termingerecht, sauber und mit höchster Qualität durch.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <div class="contact-bar">
+      <div class="contact-bar-item">
+        <p class="contact-bar-label">Telefon</p>
+        <p class="contact-bar-val"><a href="tel:068120809929">0681 20809929</a></p>
+      </div>
+      <div class="contact-bar-item">
+        <p class="contact-bar-label">E-Mail</p>
+        <p class="contact-bar-val"><a href="mailto:gartenservice@cosmin.at">costincosmincostin@gmail.com</a></p>
+      </div>
+      <div class="contact-bar-item">
+        <p class="contact-bar-label">Öffnungszeiten</p>
+        <p class="contact-bar-val">Mo – Fr &nbsp; 07:00 – 17:00 Uhr</p>
+      </div>
+    </div>
+
+    <div class="contact-body">
+      <div class="contact-form-side">
+        <p class="label">Kontakt</p>
+        <h2 class="display">Sprechen wir über<br/><em>Ihren Garten.</em></h2>
+        <p class="sub">Erzählen Sie uns von Ihrem Garten oder Objekt – wir vereinbaren gerne einen kostenlosen Besichtigungstermin.</p>
+
+        <form id="contact-form" action="https://formspree.io/f/mbdqyjpv" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-name">Name</label>
+              <input type="text" id="f-name" name="name" placeholder="Ihr Name" required/>
+            </div>
+            <div class="form-group">
+              <label for="f-phone">Telefon</label>
+              <input type="tel" id="f-phone" name="phone" placeholder="Telefon" inputmode="numeric" pattern="[0-9]*" autocomplete="tel"/>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="f-email">E-Mail</label>
+            <input type="email" id="f-email" name="email" placeholder="ihre@email.at" autocomplete="email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required/>
+          </div>
+
+          <div class="form-group">
+            <label for="f-message">Projektbeschreibung</label>
+            <textarea id="f-message" name="message" placeholder="Erzählen Sie uns von Ihrem Garten, der Fläche und Ihren Wünschen…"></textarea>
+          </div>
+
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off"/>
+          <button type="submit" class="form-submit" id="form-btn">Nachricht senden →</button>
+          <div class="form-success" id="form-success">✓ &nbsp;Danke! Wir melden uns innerhalb von 24 Stunden für einen Besichtigungstermin.</div>
+          <div class="form-error" id="form-error">Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.</div>
+        </form>
+      </div>
+
+      <div class="contact-map-side">
+        <iframe class="map-iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2664.8173625011414!2d16.287684286082197!3d48.09446638001502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476daf16d284bba1%3A0x91ad99bd4613c111!2sAlter%20Wienerweg%207%2C%202344%20Maria%20Enzersdorf%2C%20Austria!5e0!3m2!1sro!2sro!4v1775160412104!5m2!1sro!2sro"
+          width="600"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <div class="map-label">
+          <strong>Gartenservice Cosmin</strong>
+          2344 Maria Enzersdorf, Alter Wienerweg 7
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="footer-logo">Gartenservice Cosmin</span>
+    <div class="footer-links">
+      <a href="#services">Leistungen</a>
+      <a href="#galerie">Projekte</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+    </div>
+    <span>© 2026 — Alle Rechte vorbehalten</span>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" id="lb-close">Schließen ✕</button>
+      <div class="lightbox-fill" id="lb-fill"></div>
+      <div class="lightbox-caption" id="lb-caption"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
