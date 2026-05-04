@@ -835,7 +835,7 @@ h2.display em { font-style: italic; color: var(--moss); }
 .about-visual-img {
   position: absolute;
   inset: 0;
-  background: url('img/gradina.JPG') center/cover no-repeat;
+  background: url('img/gradina.jpg') center/cover no-repeat;
   opacity: 1;
 }
 
