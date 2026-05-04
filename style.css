@@ -475,7 +475,7 @@ h2.display em { font-style: italic; color: var(--moss); }
 .philosophy-img {
   position: absolute;
   inset: 0;
-  background: url('img/gazongradina.JPG') center/cover no-repeat;
+  background: url('img/gazongradina.jpg') center/cover no-repeat;
   opacity: 1;
   transition: transform 0.8s;
 }
